@@ -1,24 +1,59 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+//import Home from "../views/Home.vue";
+import Resources from "@/pages/ResourcesRoute";
+import TeamRoute from "@/pages/TeamRoute";
+import MissionAndVisionRoute from "@/pages/MissionAndVisionRoute";
+import EventsRoute  from "@/pages/EventsRoute";
+import ContactUsRoute from "@/pages/ContactUsRoute";
+import loginVue       from "@/pages/loginVue";
+import EventDetailsRoute from "@/pages/EventDetailsRoute";
+import MemberProfileRoute from "@/pages/MemberProfileRoute";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: Home
+    name: "Resources",
+    component: Resources
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
+    path: "/about/team",
+    name: "TeamRoute",
+    component: TeamRoute
+  },
+
+  {
+    path: "/about/mission-and-vision",
+    name: "MissionAndVisionRoute",
+    component: MissionAndVisionRoute
+  },
+  {
+    path: "/EventsRoute",
+    name: 'EventsRoute',
+    component: EventsRoute
+  },
+  {
+    path: "/contactus",
+    name: 'ContactUsRoute',
+    component: ContactUsRoute
+  },
+  {
+    path: "/login",
+    name: "loginVue",
+    component: loginVue
+  },
+  {
+    path: "/EventDetailsRoute",
+    name: "EventDetailsRoute",
+    component: EventDetailsRoute
+  },
+  {
+    path: "/MemberProfileRoute",
+    name: "MemberProfileRoute",
+    component: MemberProfileRoute
+  } 
 ];
 
 const router = new VueRouter({

@@ -9,12 +9,21 @@ import ContactUsRoute from "@/pages/ContactUsRoute";
 import loginVue       from "@/pages/loginVue";
 import EventDetailsRoute from "@/pages/EventDetailsRoute";
 import MemberProfileRoute from "@/pages/MemberProfileRoute";
+import pastEventsRoute from "@/pages/pastEventsRoute";
+import HomeRoute       from "@/pages/HomeRoute";
+import ProfessionalsProfilesRoute from "@/pages/ProfessionalsProfilesRoute";
+import ArticlesAndVideosRoute from "@/pages/ArticlesAndVideosRoute"
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/HomeRoute",
+    name: "HomeRoute",
+    component: HomeRoute
+  },
+  {
+    path: '/',
     name: "Resources",
     component: Resources
   },
@@ -53,6 +62,21 @@ const routes = [
     path: "/MemberProfileRoute",
     name: "MemberProfileRoute",
     component: MemberProfileRoute
+  },
+  {
+    path: "/pastEventsRoute",
+    name: "pastEventsRoute",
+    component: pastEventsRoute
+  },
+  {
+    path: "/ProfessionalsProfilesRoute",
+    name: "ProfessionalsProfilesRoute",
+    component: ProfessionalsProfilesRoute
+  },
+  {
+    path: "/ArticlesAndVideosRoute",
+    name: "ArticlesAndVideosRoute",
+    component: ArticlesAndVideosRoute
   } 
 ];
 

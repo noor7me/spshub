@@ -14,6 +14,6 @@
 
 <script>
 export default {
-  name: 'ResourcesRoute'
+  name: 'pastEventsRoute'
 };
 </script>

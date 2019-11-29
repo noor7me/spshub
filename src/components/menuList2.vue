@@ -1,8 +1,11 @@
 <template>
     <div>
-    <v-menu offset-y
+    <v-menu 
+      left  
+      offset-y
+      offset-x
       open-on-hover
-      close-on-click
+ 
     >
       <template v-slot:activator="{ on }">
         <v-btn

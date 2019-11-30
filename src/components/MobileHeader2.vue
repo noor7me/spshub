@@ -6,7 +6,7 @@
           <v-toolbar-title>SPSHUB</v-toolbar-title>
       </v-app-bar>
       </v-card>
-      <v-navigation-drawer v-model ="drawer" app>
+      <v-navigation-drawer v-model ="drawer" app width="300">
          <v-list>
              <nestedList :subpages="links[0]"></nestedList>
              <nestedList :subpages="links[1]"></nestedList>

@@ -1,7 +1,7 @@
 <template>
   <nav>
       <v-card class="overflow-hidden">
-      <v-app-bar app dark class="green darken-4" :hide-on-scroll="hideOnScroll" width="100">
+      <v-app-bar app dark class="green darken-4" :hide-on-scroll="hideOnScroll">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
           <v-toolbar-title>SPSHUB</v-toolbar-title>
       </v-app-bar>

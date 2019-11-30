@@ -2,7 +2,7 @@
 
 <v-app>
 
-  <MobileHeader v-if="$vuetify.breakpoint.xsOnly" :links="navigation.links"></MobileHeader>
+  <MobileHeader v-if="$vuetify.breakpoint.xsOnly || $vuetify.breakpoint.smOnly" :links="navigation.links"></MobileHeader>
   <DesktopHeader v-else :links="navigation.links"></DesktopHeader>
   <!-- Sizes your content based upon application components -->
   <v-content>

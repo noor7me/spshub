@@ -8,7 +8,7 @@
     <template v-slot:activator>
         <v-list-item-content>
             <v-list-item-title>
-                <strong>{{subpages.label}}</strong>
+                <strong>{{subpages.label.toUpperCase()}}</strong>
             </v-list-item-title>        
         </v-list-item-content>
     </template>
@@ -19,7 +19,7 @@
         link
     >
         <v-list-item-title
-            v-text="subpage.label"
+            v-text="subpage.label.toUpperCase()"
         ></v-list-item-title>
     </v-list-item>   
 

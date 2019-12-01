@@ -3,7 +3,9 @@
       <v-card class="overflow-hidden">
       <v-app-bar app dark class="green darken-4" :hide-on-scroll="hideOnScroll">
           <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-          <v-toolbar-title>SPSHUB</v-toolbar-title>
+          <v-toolbar-title class="subheading">
+              <strong>SPSHUB</strong>
+          </v-toolbar-title>
       </v-app-bar>
       </v-card>
       <v-navigation-drawer v-model ="drawer" app width="300">

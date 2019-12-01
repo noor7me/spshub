@@ -3,14 +3,18 @@
     app
     dark
     padless
+    dense
+    height="90"
+    
   >
     <v-card
       class="flex"
       flat
       tile
+      
     >
       <v-card-title class="green darken-4">
-        <strong class="subheading">Get connected with us on social networks!</strong>
+        Follow us
 
         <v-spacer></v-spacer>
 
@@ -21,6 +25,8 @@
           class="mx-4"
           dark
           icon
+          height="10"
+
         >
           <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>

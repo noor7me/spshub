@@ -4,7 +4,7 @@
     dark
     padless
     dense
-    height="90"
+    height="50"
     
   >
     <v-card
@@ -13,11 +13,11 @@
       tile
       
     >
-      <v-card-title class="green darken-4">
-        Follow us
-
-        <v-spacer></v-spacer>
-
+  
+      <v-spacer></v-spacer>
+      <v-card-text class="green darken-4 white--text text-center">
+          <Strong>Follow Us</Strong>
+          
         <v-btn
           v-for="icon in icons"
           :key="icon"
@@ -30,10 +30,6 @@
         >
           <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
-      </v-card-title>
-
-      <v-card-text class="green white--text text-center">
-        {{ new Date().getFullYear() }} — <strong>SPSHUB</strong>
       </v-card-text>
     </v-card>
   </v-footer>

@@ -7,8 +7,8 @@
                 :key="person.name"> 
                 <v-card class="member-card text-xs-center ma-2">
                     <v-responsive class="pt-4">
-                        <v-img aspect-ratio ="4" height ="400" contain>
-                            <img :src="person.profilePic" alt="">        
+                        <v-img contain
+                            :src="person.profilePic">        
                         </v-img>
                     </v-responsive>
                     <v-card-text>

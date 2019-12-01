@@ -1,56 +1,38 @@
 <template>
-  <div>
-    <v-app-bar app
-      class="green darken-4"
-      dense
-      dark
-    >
-      <v-toolbar-title>Somali Professionals & Students Hub</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-     <v-menu
-        left
-        bottom
-        offset-y
-        open-on-hover
-      >
-        <template v-slot:activator="{ on }">
-          <v-btn icon v-on="on">
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list>
-          <v-list-item
-            v-for="link in links"
-            :key="link.id"
-            :to="link.url"
-            >
-            <v-list-item-title>
-                <template v-if="link.subpages">
-                    <menuList2 :subpages="link"> </menuList2>       
-                </template>
-                <template v-else>
-                    {{ link.label }}        
-                </template>
-            
-            </v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-    </v-app-bar>
-  </div>
+  <nav>
+      <v-card class="overflow-hidden">
+      <v-app-bar app dark class="green darken-4" :hide-on-scroll="hideOnScroll">
+          <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+          <v-toolbar-title>SPSHUB</v-toolbar-title>
+      </v-app-bar>
+      </v-card>
+      <v-navigation-drawer v-model ="drawer" app width="300">
+         <v-list>
+             <nestedList :subpages="links[0]"></nestedList>
+             <nestedList :subpages="links[1]"></nestedList>
+             <nestedList :subpages="links[2]"></nestedList>
+             <nestedList :subpages="links[3]"></nestedList>
+         </v-list>
+          
+      </v-navigation-drawer>
+  </nav>
 </template>
 
 <script>
-import menuList2 from "@/components/menuList2";
+import nestedList from "@/components/nestedList";
 export default {
+    name:  "MobileHeader2",
     props: {
         links: Array
     },
+    data () {
+        return {
+            drawer: false,
+            hideOnScroll : false
+        }
+    },
     components: {
-        menuList2
+        nestedList
     }
 
 }

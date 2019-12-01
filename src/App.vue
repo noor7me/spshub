@@ -15,14 +15,15 @@
     </v-container>
   </v-content>
 
- 
+ <AppFooter></AppFooter>
 </v-app>
 </template>
 
 <script>
 
 import DesktopHeader from "@/components/DesktopHeader";
-import MobileHeader  from "@/components/MobileHeader2";
+import MobileHeader  from "@/components/MobileHeader";
+import AppFooter     from "@/components/AppFooter";
 //import AppFooter from "@/components/AppFooter"
 import {mapState } from 'vuex';
 
@@ -30,7 +31,8 @@ export default {
   name: 'App',
   components: {
     DesktopHeader,
-    MobileHeader
+    MobileHeader,
+    AppFooter
   },
   computed: {
     ...mapState({

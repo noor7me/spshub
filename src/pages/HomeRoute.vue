@@ -1,13 +1,19 @@
 <template>
   <v-container>
-    <v-content class="mt-5">
-        <v-layout 
-          justify-center
-          align-center
-        >
-            <h2 class="display-2 indigo--text">Page Under Construction</h2>
-        </v-layout>
-    </v-content>
+    <v-carousel>
+      <v-carousel-item>
+        <div class="carousel1"></div>
+      </v-carousel-item>
+      <v-carousel-item>
+        <div class="carousel2"></div>
+      </v-carousel-item>
+      <v-carousel-item>
+        <div class="carousel3"></div>
+      </v-carousel-item>
+      <v-carousel-item>
+        <div class="carousel4"></div>
+      </v-carousel-item>
+    </v-carousel>
     
   </v-container>
 </template>
@@ -19,5 +25,24 @@ export default {
 </script>
 
 <style>
-
+  .carousel1{
+    width: 800px;
+    height: 600px;
+    color: green
+  }
+  .carousel2{
+    width: 800px;
+    height: 600px;
+    color: rgb(66, 0, 128)
+  }
+    .carousel3{
+    width: 800px;
+    height: 600px;
+    color: rgb(129, 5, 98)
+  }
+    .carousel4{
+    width: 800px;
+    height: 600px;
+    color: rgb(128, 98, 0)
+  }
 </style>

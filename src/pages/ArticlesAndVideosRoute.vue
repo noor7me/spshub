@@ -1,36 +1,38 @@
 <template>
-<div>
+<v-container>
+  <div>
 
-        <v-row>
-          <v-col>
-            <span class="video-header indigo--text">
-                A List of Life Changing Videos 
-            </span> 
-          </v-col>
-        </v-row>
-        <v-row
-          v-for="video in videos"
-          :key="video.id"
-        >
-          <v-col>
-              <v-row 
-                
-              >
-                <div class="video-box">
-                  <iframe width="330" height="400"
-                      :src= video.link
-                  >
-                  </iframe>
-                  <div class="video-title">
-                  <span class="video-title"> {{video.title}}</span>
+          <v-row>
+            <v-col>
+              <span class="video-header indigo--text">
+                  A List of Life Changing Videos 
+              </span> 
+            </v-col>
+          </v-row>
+          <v-row
+            v-for="video in videos"
+            :key="video.id"
+            
+          >
+            <v-col cols="12">
+                <v-row 
+                  justify="center"
+                >
+                  <div class="video-box">
+                    <iframe width="330" height="400"
+                        :src= video.link
+                    >
+                    </iframe>
+                    <div class="video-title">
+                    <span class="video-title"> {{video.title}}</span>
+                    </div>
                   </div>
-                </div>
-              </v-row>
-          </v-col>
-        </v-row>
+                </v-row>
+            </v-col>
+          </v-row>
 
-    </div>
-
+      </div>
+</v-container>
 </template>
 
 <script>
@@ -96,10 +98,12 @@ export default {
   }
 };
 </script>
-<style scoped>
+
+
+<style  lang="css" scoped>
   .video-header{
     font-style: normal;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 500;
   }
   .video-title{

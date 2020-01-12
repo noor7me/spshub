@@ -20,7 +20,7 @@
           
         <v-btn
           v-for="icon in icons"
-          :key="icon"
+          :key="icon.id"
           @click="fetchURL(icon.url)"
           class="mx-4"
           dark
@@ -49,7 +49,7 @@
           url:   'https://www.youtube.com/channel/UCNxrBugyp7o3w7o7KdaANmA'
         },
         {
-          id: 2,
+          id: 3,
           icon: 'fab fa-twitter',
           url:   'https://www.youtube.com/channel/UCNxrBugyp7o3w7o7KdaANmA'
         }

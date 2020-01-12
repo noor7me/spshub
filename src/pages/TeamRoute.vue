@@ -32,7 +32,7 @@ export default {
       },
       {
         name: 'Abdulqadir Diriye',
-        profilePic: '/assets/images/ADirie.jpg',
+        profilePic: '/assets/images/ADirie.JPG',
         email: 'spshub.mentorship@gmail.com'
       },
       {

@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <v-content class="mt-5">
+<div>
+
         <v-row>
           <v-col>
             <span class="video-header indigo--text">
@@ -13,9 +13,11 @@
           :key="video.id"
         >
           <v-col>
-              <v-row justify="center">
-                <div>
-                  <iframe width="600" height="400"
+              <v-row 
+                
+              >
+                <div class="video-box">
+                  <iframe width="330" height="400"
                       :src= video.link
                   >
                   </iframe>
@@ -26,9 +28,9 @@
               </v-row>
           </v-col>
         </v-row>
-    </v-content>
-    
-  </v-container>
+
+    </div>
+
 </template>
 
 <script>
@@ -102,9 +104,15 @@ export default {
   }
   .video-title{
     font-style: normal;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     text-align: center; 
+  } 
 
+  .video-box{
+    width: 400px;
+    height: 430px;
+    margin-left: 25px;
   }
+
 </style>
